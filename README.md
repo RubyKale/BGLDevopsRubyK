@@ -6,6 +6,12 @@
 curl -s $CSV_URL | awk -F, -v cutoff="$cutoff_timestamp" 
 ```
 
+###How to run
+
+```bash
+sh ec2instanceid.sh
+
+```
 
 ### Exercise 2: Flattening a List and Converting it to a Set for Unique Values
 
@@ -13,6 +19,17 @@ curl -s $CSV_URL | awk -F, -v cutoff="$cutoff_timestamp"
 groups_lists = [for user in local.users : user.groups]
 flat_groups  = flatten(local.groups_lists)
 groups = toset(local.flat_groups)
+```
+
+###How to run
+
+```bash
+terraform init
+terraform plan
+terraform apply
+
+terraform destroy
+
 ```
 
 ### Exercise 3: Run Nginx in Foreground   : using "daemon off"
