@@ -1,12 +1,5 @@
 # BGLDevopsRubyK
 
-
-### Exercise 1: Run Nginx in Foreground   : using "daemon off"
-
-```bash
-CMD echo "starting nginx" && nginx -g 'daemon off;'
-```
-
 ### Exercise 2: Flattening a List and Converting it to a Set for Unique Values
 
 ```hcl
@@ -14,6 +7,14 @@ groups_lists = [for user in local.users : user.groups]
 flat_groups  = flatten(local.groups_lists)
 groups = toset(local.flat_groups)
 ```
+
+### Exercise 3: Run Nginx in Foreground   : using "daemon off"
+
+```bash
+CMD echo "starting nginx" && nginx -g 'daemon off;'
+```
+
+
 
 ### Exercise 4: Approach #3 – Wget** from github site.
 
