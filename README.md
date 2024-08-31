@@ -6,7 +6,7 @@
 curl -s $CSV_URL | awk -F, -v cutoff="$cutoff_timestamp" 
 ```
 
-###How to run
+### How to run
 
 ```bash
 sh ec2instanceid.sh
@@ -21,7 +21,7 @@ flat_groups  = flatten(local.groups_lists)
 groups = toset(local.flat_groups)
 ```
 
-###How to run
+### How to run
 
 ```bash
 terraform init
