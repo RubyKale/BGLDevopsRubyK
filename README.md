@@ -65,5 +65,13 @@
   kubectl get pods -o wide 
   ```
 
+###Glosory
+
+https://stackoverflow.com/questions/18861300/how-to-run-nginx-within-a-docker-container-without-halting
+https://developer.hashicorp.com/terraform/language/functions/toset
+https://developer.hashicorp.com/terraform/language/functions/flatten
+https://www.theunixschool.com/2012/06/awk-10-examples-to-group-data-in-csv-or.html
+https://stackoverflow.com/questions/58627542/remove-quotes-from-all-columns-with-awk
+
 
   
