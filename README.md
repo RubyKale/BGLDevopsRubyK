@@ -39,16 +39,17 @@
    ```
    
    ### How to run
-   
+   Check the container name using "docker ps" cmd.
    ```bash
    docker build -t my-nginx-image .
+   docker ps
    docker run -d -p 8080:80 --name my-nginx-container my-nginx-image
    ```
    ### Access the application at http://localhost:8080.
 
 ### Exercise 4: Approach #3 – Wget** from github site.
 
-   Approach # 3 – Wget
+   Approach 3 – Wget
    Wget https is another approach that helps to download a single file from a GitHub repository. Like a single file download using a URL, Wget is only applicable to download a file from a public repository. 
    
    This method assumes that you need to write a wget command before the URL of the needed file. Moreover, you need to use -L flag to instruct wget to download only the file you want to retrieve. So, the command will look like this:
