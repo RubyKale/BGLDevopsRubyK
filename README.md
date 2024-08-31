@@ -62,7 +62,7 @@
  When using minikube use below to mount the data folder for it to be accessible from within the pod on local. It mounts the host directory /data to the directory /data inside the Minikube VM. This allows the Minikube environment to access and use files stored in the specified host directory, facilitating the sharing of data between the host and the Kubernetes cluster running in Minikube.
    ```bash 
   minikube start --mount --mount-string="/data:/data"
-  kubectl apply -f initPodK8.yml
+  kubectl apply -f initPod.yml
   kubectl logs myapp-pod
   kubectl get pods -o wide 
   ```
