@@ -1,4 +1,11 @@
 # BGLDevopsRubyK
+### Exercise 1: 
+'awk' used to read the columns with comman separataion -F,  and a variable is passed using -v
+
+```bash
+curl -s $CSV_URL | awk -F, -v cutoff="$cutoff_timestamp" 
+```
+
 
 ### Exercise 2: Flattening a List and Converting it to a Set for Unique Values
 
@@ -26,3 +33,4 @@ This method assumes that you need to write a wget command before the URL of the 
 ```bash
 wget -L https://raw.githubusercontent.com/[user_name]/[repository_name]/[branch]/[file]
 ```
+
