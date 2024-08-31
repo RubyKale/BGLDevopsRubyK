@@ -1,6 +1,6 @@
 # BGLDevopsRubyK
 ### Exercise 1: 
-   'awk' used to read the columns with comman separataion -F,  and a variable is passed using -v
+   'awk' used to read the columns with comma separataion -F,  and a variable is passed using -v
 
    ```bash
    curl -s $CSV_URL | awk -F, -v cutoff="$cutoff_timestamp" 
@@ -13,7 +13,7 @@
    
    ```
 
-### Exercise 2: Flattening a List and Converting it to a Set for Unique Values
+### Exercise 2: Flattening a Nested List and Converting it to a Set for Unique Values
 
    ```hcl
    groups_lists = [for user in local.users : user.groups]
